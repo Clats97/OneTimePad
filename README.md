@@ -1,18 +1,19 @@
 # OneTimePad
-An unbreakable text substitution cipher. It meets and exceeds AES-256 encryption strength due to it being information-theoretic security. Easy to use.
-
-Below is a sample README file that explains what the script does:
+An unbreakable text substitution cipher. It meets and exceeds AES-256 encryption strength due to it being information-theoretic security based. This is backed by rigorous mathematical and cryptographical analysis. Easy to use.
 
 ---
 
 # Uncrackable Substitution Cipher
 
-Version 1.00  
+ClatsOTP
+
+Version 1.00 CLI (GUI coming soon) 
+
 By Joshua M Clatney – Ethical Pentesting Enthusiast
 
 ## Overview
 
-This Python script implements a simple, unbreakable substitution cipher for encrypting and decrypting text. It features a command-line interface with an ASCII art header and uses a fixed key generated from a Lorem Ipsum text. The cipher works by shifting each letter in the input text by a corresponding letter in the key. Please note, in order for this cipher to be perfectly secure, you should NOT reuse the text used as the key. This script uses the same text, Lorem Ipsum repeated 5 times, which means you can encrypt up to 2100 characters, unless you lengthen it. You can do this by opening the script and pasting in your own random text in the appropriate section. With a block of text that's 500 words long, with an average of 5 letters per word (2500 letters), the keyspace will be 2^11,751 which is massive compared to the AES keyspace of 2^256. AES-256 has a keyspace larger than the amount of atoms in the observable universe, meaning the One Time Key's keyspace is 45x larger than AES-256. It would take the most advanced supercomputer thousands of septillions of years to brute force and get the plaintext. By that time, everyone would be dead due to heat death and entropy (the sun is constantly expanding and will eventually burn everyone to death), so forget about trying to break the cipher. It will not happen if used correctly. 
+This Python script implements a simple, unbreakable substitution cipher for encrypting and decrypting text. It features a command-line interface with an ASCII art header and uses a fixed key generated from a Lorem Ipsum text. The cipher works by shifting each letter in the input text by a corresponding letter in the key. Please note, in order for this cipher to be perfectly secure, you should NOT reuse the text used as the key. This script uses the same text, Lorem Ipsum repeated 5 times, which means you can encrypt up to 2500 characters unless you lengthen it. You can do this by opening the script and pasting in your own random text in the appropriate section. With a block of text that's 500 words long, with an average of 5 letters per word (2500 letters), the keyspace will be 2^11,751 which is massive compared to the AES keyspace of 2^256. AES-256 has a keyspace larger than the amount of atoms in the observable universe, meaning the One Time Key's keyspace is 45x larger than AES-256. It would take the most advanced supercomputer thousands of septillions of years to brute force and get the plaintext. By that time, everyone would be dead anyways due to heat death and entropy (the sun is constantly expanding and will eventually burn everyone to death and cook the earth), so forget about trying to break the cipher. It will not happen if it's used correctly. 
 
 ## Features
 
@@ -56,14 +57,14 @@ This Python script implements a simple, unbreakable substitution cipher for encr
 ## Usage Instructions
 
 1. **Run the Script:**  
-   Execute the script in a terminal using Python 3.
+   Execute the script in a terminal or by downloading it using Python 3x.
 
 2. **Select an Option:**  
    - Enter `1` for encryption.
    - Enter `2` for decryption.
 
 3. **Input Your Text:**  
-   Type your plaintext (for encryption) or ciphertext (for decryption) in uppercase.
+   Type your plaintext (for encryption) or ciphertext (for decryption).
 
 4. **View the Result:**  
    The script outputs the encrypted ciphertext or decrypted plaintext. If the text contains more letters than the key length, an error is displayed.
@@ -74,17 +75,19 @@ This Python script implements a simple, unbreakable substitution cipher for encr
 ## Limitations and Considerations
 
 - **Static Key:**  
-  The key is derived from a repeated Lorem Ipsum text, making it predictable and unsuitable for serious security purposes. If you need this to be perfectly secure, you can only use the Lorem Ipsum once, then you must change it. However, it will still be highly secure and unbreakable unless you encrypt a second block of text with the same key.
+The key is derived from a repeated Lorem Ipsum text, making it predictable and unsuitable for serious security purposes **ONLY IF THE SAME KEY IS USED AGAIN**. If you need this to be perfectly secure and ensure it is uncrackable, you can only use the Lorem Ipsum once, then you must change it. However, it will still be highly secure and unbreakable unless you encrypt a second block of text with the same key to the same person.
 
 - **Key Length Constraint:**  
-  The script enforces that the number of alphabetic characters in the input does not exceed the length of the processed key. This means very long texts may trigger an error.
+  The script enforces that the number of alphabetic characters in the input does not exceed the length of the processed key. This means very long texts may trigger an error and requires a modification, by either lengthening the key string, or increasing how many times the key is multiplied by. 
 
 - **Encryption Simplicity:**  
-  This cipher is a simple substitution method, but is not vulnerable to standard cryptanalysis techniques like frequency analysis or Friedman analysis. The Caeser, ROT13, and Vigenere (including Autokey varient) can all be decrypted by various means, the first 2 can be decrypted by simply pasting the ciphertext into ChatGPT, the Vigenere cannot be broken by ChatGPT due to the variable shift, but One Time Pad CANNOT be broken by anyone when used properly. 
+  This cipher is a simple substitution method, but is not vulnerable to standard cryptanalysis techniques like frequency analysis or Friedman analysis. The Caeser, ROT13, and Vigenere (including the Autokey varient) can all be decrypted by various means, the first 2 can be decrypted by simply pasting the ciphertext into ChatGPT, the Vigenere cannot be broken by ChatGPT due to the variable shift, but One Time Pad CANNOT be broken by anyone when used properly. 
 
 - **Case Sensitivity:**  
-  The script converts all input to uppercase, meaning it only processes uppercase letters for encryption/decryption.
+  The script converts all input to uppercase. 
 
   This project is licensed under the Apache 2.0 License.
+
+Contributions are encouraged and appreciated. If you have questions email Skyline92X@pm.me. 
 
 
