@@ -1,5 +1,5 @@
 # OneTimePad
-An unbreakable text substitution cipher. It meets and exceeds AES-256 encryption strength. Easy to use.
+An unbreakable text substitution cipher. It meets and exceeds AES-256 encryption strength due to it being information-theoretic security. Easy to use.
 
 Below is a sample README file that explains what the script does:
 
