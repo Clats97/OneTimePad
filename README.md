@@ -86,8 +86,14 @@ The key is derived from a repeated Lorem Ipsum text, making it predictable and u
 - **Case Sensitivity:**  
   The script converts all input to uppercase. 
 
-  This project is licensed under the Apache 2.0 License.
+## License
 
-Contributions are encouraged and appreciated. If you have questions email Skyline92X@pm.me. 
+Distributed under the Apache 2.0 License. 
+
+**Author**
+Joshua M Clatney (Clats97)
+Ethical Pentesting Enthusiast
+
+Copyright 2025 Joshua M Clatney (Clats97) 
 
 
